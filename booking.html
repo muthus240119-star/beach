@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+<style>
+body{
+    background-image: url(b.png);
+    background-size: cover;
+    text-align:center;
+}
+.box{
+    width:400px;
+    background: rgba(255,255,255,0.8);
+    padding:30px;
+    border-radius:10px;
+    margin:auto;
+    margin-top:50px;
+}
+input, select{
+    margin:10px 0;
+    height:40px;
+    width:100%;
+}
+button{
+    padding:10px;
+    background:#0d2c4a;
+    color:white;
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<form action="booking.php" method="POST">
+
+<h2>BOOK YOUR STAY</h2>
+
+<input type="text" name="username" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<label>Check-In</label>
+<input type="date" name="checkin" required>
+
+<label>Check-Out</label>
+<input type="date" name="checkout" required>
+
+<select name="location" required>
+<option value="">Select Location</option>
+<option value="CHENNAI">CHENNAI</option>
+<option value="GOA">GOA</option>
+<option value="VARKALA">VARKALA</option>
+<option value="KOVALAM">KOVALAM</option>
+<option value="GOKARNA">GOKARNA</option>
+<option value="PONDICHERRY">PONDICHERRY</option>
+</select>
+
+<select name="room" required>
+<option value="">Select Room</option>
+<option value="Normal">Normal - 2000</option>
+<option value="Deluxe">Deluxe - 4000</option>
+<option value="Luxury">Luxury - 6000</option>
+<option value="Royal">Royal - 9000</option>
+</select>
+
+<input type="number" name="members" placeholder="No of Days" required>
+
+<button type="submit">Book Now</button>
+
+</form>
+</div>
+
+</body>
+</html>

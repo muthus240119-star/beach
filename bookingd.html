@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dining Booking</title>
+<style>
+body{
+    background-image: url(b.png);
+    background-size: cover;
+    text-align:center;
+}
+.box{
+    width:400px;
+    background: rgba(255,255,255,0.8);
+    padding:30px;
+    border-radius:10px;
+    margin:auto;
+    margin-top:50px;
+}
+input, select{
+    margin:10px 0;
+    height:40px;
+    width:100%;
+}
+button{
+    padding:10px;
+    background:#0d2c4a;
+    color:white;
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<form action="dinbook.php" method="POST">
+
+<h2>BOOK YOUR DINING</h2>
+
+<input type="text" name="username" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="phone" placeholder="Phone Number" required>
+
+<label>Select Dining Type</label>
+<select name="dining_type" required>
+<option value="">Select Dining</option>
+<option value="Family Dining">Family Dining - 1500</option>
+<option value="Candle Light Dinner">Candle Light Dinner - 3000</option>
+<option value="Buffet Dining">Buffet Dining - 2000</option>
+</select>
+
+<label>Date</label>
+<input type="date" name="date" required>
+
+<label>Time</label>
+<input type="time" name="time" required>
+
+<input type="number" name="guests" placeholder="No of Guests" required>
+
+<button type="submit">Book Now</button>
+
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Salt & Sand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        height: 110vh;
+        background:url(d.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;   
+     }
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    height:100vh;
+    background: url('beach.jpg') no-repeat center center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:80px;
+}
+
+.content h1{
+    font-size:70px;
+    color:#0d2c4a;
+    line-height:1.1;
+}
+
+.subtitle{
+    font-size:20px;
+    margin-top:15px;
+    color:#1e4b73;
+    letter-spacing:2px;
+}
+header{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:20px 80px;
+}
+
+.navbar{
+    display:flex;
+}
+
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    font-size: large;
+    gap:40px; 
+    margin-left: auto;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    transition:0.3s;    
+}
+
+.nav-links li a:hover{
+    color:#00bcd4;
+}
+
+.buttons{
+    margin-top:25px;
+}
+.btn{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-size:16px;
+    margin-right:10px;
+}
+
+.primary{
+    background:#0d4d8b;
+    color:white;
+}
+
+.secondary{
+    background:white;
+    color:#0d4d8b;
+    border:1px solid #0d4d8b;
+}
+.footer{
+    color: #0d2c4a;;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+}
+</style>
+<header>
+    <nav class="navbar">
+
+        <ul class="nav-links">
+            <li><a href="login.html"><b>Login</b></a></li>
+            <li><a href="admin.php"><b>Admin</b></a></li>
+            <li><a href="rooms.html"><b>Rooms</b></a></li>
+            <li><a href="dinning.html"><b>Dinning</b></a></li>
+            <li><a href="spa.html"><b>Spa</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<section class="hero">
+    <div class="content">
+        <h1>Experience <br> Paradise</h1>
+        <p class="subtitle"><b>Luxury Salt & Sand Resort</b></p>
+
+        <div class="buttons">
+            <a href="booking.html" class="btn primary">Book Now</a>
+            <a href="about.html" class="btn secondary">Learn More</a>
+        </div>
+    </div>
+    </section><br><br>
+    <div class="footer">
+        <P><b> © 2026 Salt & Sand </b></P>
+    </div>
+</body>
+</html>
