@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Contact Us - Salt & Sand</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:url(b.png);
+}
+
+/* HEADER */
+header{
+
+    padding:15px;
+}
+header a{
+    color:white;
+    text-decoration:none;
+    background:#144a75;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+/* MAIN CONTAINER */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:50px;
+    flex-wrap:wrap;
+}
+
+/* CONTACT FORM */
+.box{
+    width:400px;
+     background:rgba(255,255,255,0.8);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    color:#0d2c4a;
+}
+
+/* INPUT */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:80px;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    background:#0d2c4a;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:#144a75;
+}
+
+/* CONTACT INFO */
+.info{
+    width:400px;
+     background:rgba(255,255,255,0.8);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.info p{
+    margin:10px 0;
+    font-size:15px;
+}
+
+/* MAP */
+.map{
+    width:100%;
+    margin-top:20px;
+}
+iframe{
+    width:100%;
+    height:200px;
+    border:0;
+    border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="home.html">← Back</a>
+</header>
+
+<div class="container">
+
+    <!-- CONTACT FORM -->
+    <div class="box">
+        <h2>Contact Us</h2>
+
+        <form id="contactform" onsubmit="return sendMessage()">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+             <input type="text" id="mobile" placeholder="Your Mobile" required>
+            <textarea id="msg" placeholder="Your Address" required></textarea>
+            <textarea id="msg" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- CONTACT DETAILS -->
+    <div class="info">
+        <h2>Get in Touch</h2>
+
+        <p><b>📍 Main Branch:</b><br>
+        Salt & Sand Resort,<br>
+        Beach Road, ECR,<br>
+        Chennai, Tamil Nadu, India</p>
+
+        <p><b>📍 Other Branches</b><br>
+        Gokarana <br>
+        Goa  <br>
+        Pondicherry <br> 
+        Varkala  <br>
+        Kovalam</p>
+
+        <p><b>📞 Phone:</b><br>
+        +91 98765 43210</p>
+
+        <p><b>📧 Email:</b><br>
+        contact@saltandsand.com</p>
+
+        <p><b>🕒 Working Hours:</b><br>
+        Mon - Sun: 9:00 AM - 9:00 PM</p>
+
+        <!-- GOOGLE MAP -->
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=ECR%20Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 Salt & Sand | All Rights Reserved</p>
+</div>
+
+<script>
+function sendMessage(){
+    alert("Message sent successfully!");
+    document.getElementById("contactform").reset();
+    return false;
+}
+</script>
+
+</body>
+</html>
